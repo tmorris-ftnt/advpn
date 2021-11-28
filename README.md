@@ -1,4 +1,7 @@
-# FortiGAte ADVPN Wizard
+# FortiGate ADVPN Wizard
+
+Current version supports 6.4.6 / 6.4.7 / 6.4.8
+
 
 Link: https://advpn.fortinet-se.nz
 
