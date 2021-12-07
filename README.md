@@ -45,8 +45,8 @@ Hub to Hub VPN's are not created by this wizard. Hubs are often connected with d
 ## VPN Naming and network ID's
 VPNs are given a name vpnXYZ where
 ```
-Hubs: X = Hub number, Y = Interface number Z = VPN Slot (from number of VPNs on this Hub interface)
-Spokes: X = Hub number, Y = Hub Interface, Z = VPN Slot (from numer of VPNs to this hub from this Spoke interface)
+Hubs: X = Hub number, Y = Interface number Z = VPN Slot (# of VPN on this Hub interface)
+Spokes: X = Hub number, Y = Hub Interface, Z = VPN Slot (# of VPN to this hub from this Spoke interface)
 ```
 these numbers will match between the hub and spoke - the network id is derived from this number using the forumla\
 `( x - 1 ) * 24 + ( y - 1 ) * 4 + z`\
