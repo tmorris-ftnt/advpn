@@ -5,6 +5,8 @@ Current version supports 6.4.6 / 6.4.7 / 6.4.8
 
 Link: https://advpn.fortinet-se.nz
 
+For any bugs or feature requests please raise an issue on github. 
+
 ## Settings
 
 ### General Settings
