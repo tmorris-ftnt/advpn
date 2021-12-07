@@ -18,8 +18,7 @@ For any bugs or feature requests please raise an issue on github.
 
 
 ### Hub Settings
-**Hub Name:** Gives a name for the Hub (not currently used).
-
+**Hub Name:** Gives a name for the Hub (not currently used).\
 **Hub Subnet(s) (Comma seperated):** Specifies which networks to advertise via BGP
 
 ### Hub Interface Settings:
