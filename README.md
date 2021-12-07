@@ -43,7 +43,7 @@ Firewall Policies will be created to allow VPN to stand up and site to site traf
 Hub to Hub VPN's are not created by this wizard. Hubs are often connected with dedicated links and a VPN is not always desired. You will need to configure connectivity between hubs manually. 
 
 ## VPN Naming and network ID's
-VPNs are given a name vpnXYZ where\
+VPNs are given a name vpnXYZ where
 ```
 Hubs: X = Hub number, Y = Interface number Z = VPN Slot (from number of VPNs on this Hub interface)
 Spokes: X = Hub number, Y = Hub Interface, Z = VPN Slot (from numer of VPNs to this hub from this Spoke interface)
