@@ -23,18 +23,16 @@ For any bugs or feature requests please raise an issue on github.
 **Hub Subnet(s) (Comma seperated):** Specifies which networks to advertise via BGP
 
 ### Hub Interface Settings:
-**Interface Name:** The name of the port with WAN connection
-
-**Underlay**: Indicate if its a Internet or Private connection (Only internet interfaces at the spokes will build VPNs to internet interfaces on hubs)
-
+**Interface Name:** The name of the port with WAN connection\
+**Underlay**: Indicate if its a Internet or Private connection (Only internet interfaces at the spokes will build VPNs to internet interfaces on hubs)\
 **IP Address/Hostname:** This is used to tell the Spoke where to build a VPN too
 
 ### Spoke Settings
-**Spoke Name:** Gives a name for the Hub (not currently used).
+**Spoke Name:** Gives a name for the Hub (not currently used).\
 **Spoke Subnet(s) (Comma seperated):** Specifies which networks to advertise via BGP
 
 ### Spoke Interface Settings
-**Interface Name:** The name of the port with WAN connection
+**Interface Name:** The name of the port with WAN connection\
 **Underlay:** Indicate if its a Internet or Private connection (Only internet interfaces at the spokes will build VPNs to internet interfaces on hubs)
 
 ## Before deploying
