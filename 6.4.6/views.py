@@ -26,8 +26,11 @@ def getiprange(wizid, vpnrangesize, vpnrangeaddr):
 def index(request):
     if request.method == "POST":
         htmlout = ""
-        newinput = request.POST
-        print(newinput)
+        newinput = request.POST.copy()
+        for k in newinput:
+            newinput[k] = newinput[k].replace("<", "&lt;")
+            newinput[k] = newinput[k].replace(">", "&gt;")
+
         hubvpnlist = {"private": [], "internet": []}
 
         ##Calculate IP Addressing
@@ -254,7 +257,6 @@ end
             htmlout += "\n\n"
             htmlout += "</pre>"
 
-        print(hubvpnlist)
 
         ##### Spoke Config
         ##### Spoke Config
@@ -293,8 +295,6 @@ end
                     interfaceindex = intfindexprivate
                     vpnnameprefix = "mpls"
                 for hubvpn in hubvpnlist[newinput['spoke' + str(spoke) + '-intf' + str(spokeintf) + 'underlay']]:
-                    print(str(newinput['spoke' + str(spoke) + '-intf' + str(spokeintf) + 'intfname']) + " -> " + str(
-                        hubvpn['hi']) + str(interfaceindex) + " at ip " + str(hubvpn['ip']))
                     hubvpnaddrobj = ipaddress.ip_network(getiprange(str(hubvpn['hi']) + str(interfaceindex), vpnrangesize, vpnrangeaddr), strict=False)
 
                     vpnname = vpnnameprefix + "-" + str(hubvpn['hi']) + str(interfaceindex)
