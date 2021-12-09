@@ -5,7 +5,7 @@ Current version supports 6.4.6 / 6.4.7 / 6.4.8
 
 Link: https://advpn.fortinet-se.nz
 
-Introduction Video: https://vimeo.com/manage/videos/655152835
+Introduction Video: https://vimeo.com/655152835
 
 For any bugs or feature requests please raise an issue on github. 
 
